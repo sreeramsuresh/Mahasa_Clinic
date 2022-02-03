@@ -37,7 +37,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget#Dialog{background-color:rgb(116, 232, 255);}</string>
+   <string notr="true">QWidget#Dialog{background-color:rgb(199, 199, 199);}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="leftMargin">
@@ -150,9 +150,10 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-radius:20px;
-background-color:rgb(58, 209, 255);
-font: 14pt &quot;MV Boli&quot;;</string>
+      <string notr="true">background-color: rgb(94, 150, 255);
+color: rgb(255, 255, 255);
+font: 81 14pt &quot;Rockwell Extra Bold&quot;;
+border-radius:20px;</string>
      </property>
      <property name="text">
       <string>Login</string>

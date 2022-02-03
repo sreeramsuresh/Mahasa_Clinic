@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>603</height>
+    <width>1053</width>
+    <height>807</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>600</width>
-    <height>500</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>600</width>
-    <height>610</height>
+    <width>16777215</width>
+    <height>16777215</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -29,13 +29,25 @@
    <enum>Qt::LeftToRight</enum>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget#Dialog{background-color:rgb(116, 232, 255);}</string>
+   <string notr="true">QWidget#Dialog{background-color:rgb(199, 199, 199);}</string>
   </property>
   <layout class="QFormLayout" name="formLayout">
    <item row="0" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="NRbutton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(94, 150, 255);
+color: rgb(255, 255, 255);
+font: 81 14pt &quot;Rockwell Extra Bold&quot;;
+border-radius:20px;</string>
+       </property>
        <property name="text">
         <string>New Registration</string>
        </property>
@@ -43,6 +55,18 @@
      </item>
      <item>
       <widget class="QPushButton" name="ABbutton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(94, 150, 255);
+color: rgb(255, 255, 255);
+font: 81 14pt &quot;Rockwell Extra Bold&quot;;
+border-radius:20px;</string>
+       </property>
        <property name="text">
         <string>Address Book</string>
        </property>
@@ -50,12 +74,50 @@
      </item>
      <item>
       <widget class="QPushButton" name="NRbutton_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(94, 150, 255);
+color: rgb(255, 255, 255);
+font: 81 14pt &quot;Rockwell Extra Bold&quot;;
+border-radius:20px;</string>
+       </property>
        <property name="text">
         <string>Home</string>
        </property>
       </widget>
      </item>
     </layout>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="OPnumber">
+     <property name="font">
+      <font>
+       <family>Rockwell Extra Bold</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>OP Number</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLabel" name="oNumberl">
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Snap ITC&quot;;
+color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>12</string>
+     </property>
+    </widget>
    </item>
    <item row="6" column="0">
     <widget class="QLabel" name="Fname">
@@ -73,7 +135,31 @@
     </widget>
    </item>
    <item row="6" column="1">
-    <widget class="QLineEdit" name="lFuNa"/>
+    <widget class="QLineEdit" name="lFuNa">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLabel" name="fNamel">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
    </item>
    <item row="9" column="0">
     <widget class="QLabel" name="Gender">
@@ -97,13 +183,22 @@
      </property>
      <item>
       <widget class="QRadioButton" name="Gmale">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
         <string>Male</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QRadioButton" name="GFem">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
         <string>Female</string>
        </property>
@@ -111,36 +206,83 @@
      </item>
      <item>
       <widget class="QRadioButton" name="Goth">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
         <string>Other</string>
        </property>
       </widget>
      </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>10</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="Age">
+       <property name="font">
+        <font>
+         <family>Rockwell Extra Bold</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Age</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lAge">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
     </layout>
    </item>
-   <item row="13" column="0">
-    <widget class="QLabel" name="Age">
-     <property name="font">
-      <font>
-       <family>Rockwell Extra Bold</family>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Age</string>
-     </property>
-    </widget>
-   </item>
-   <item row="13" column="1">
-    <widget class="QLineEdit" name="lAge">
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="20" column="0">
+   <item row="11" column="0">
     <widget class="QLabel" name="Address">
      <property name="font">
       <font>
@@ -155,12 +297,12 @@
      </property>
     </widget>
    </item>
-   <item row="20" column="1">
+   <item row="11" column="1">
     <widget class="QTextEdit" name="lAddre">
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>50</height>
+       <height>100</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -169,58 +311,102 @@
        <height>50</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
     </widget>
    </item>
-   <item row="22" column="1">
-    <widget class="QLineEdit" name="lPiCo"/>
+   <item row="13" column="1">
+    <widget class="QLabel" name="addressl">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
    </item>
-   <item row="24" column="1">
-    <widget class="QLineEdit" name="lPhNu"/>
-   </item>
-   <item row="26" column="1">
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item row="14" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <property name="leftMargin">
       <number>0</number>
      </property>
      <property name="topMargin">
-      <number>0</number>
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
      </property>
      <item>
-      <widget class="QPushButton" name="Submit">
-       <property name="text">
-        <string>Submit</string>
+      <widget class="QLineEdit" name="lPiCo">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>140</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="www">
+      <widget class="QLabel" name="Phonenumber">
+       <property name="font">
+        <font>
+         <family>Rockwell Extra Bold</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Clear</string>
+        <string>Phone Number</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lPhNu">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </item>
-   <item row="28" column="1">
-    <widget class="QTableWidget" name="tableWidget">
-     <column>
-      <property name="text">
-       <string>Full Name</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Address</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>OP Number</string>
-      </property>
-     </column>
-    </widget>
-   </item>
-   <item row="22" column="0">
+   <item row="14" column="0">
     <widget class="QLabel" name="Pincode">
      <property name="font">
       <font>
@@ -235,74 +421,111 @@
      </property>
     </widget>
    </item>
-   <item row="24" column="0">
-    <widget class="QLabel" name="Phonenumber">
-     <property name="font">
-      <font>
-       <family>Rockwell Extra Bold</family>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Phone Number</string>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="1">
-    <widget class="QLabel" name="fNamel">
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0)</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="21" column="1">
-    <widget class="QLabel" name="addressl">
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0)</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="25" column="1">
+   <item row="16" column="1">
     <widget class="QLabel" name="phoneNumberl">
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0)</string>
+      <string notr="true">color: rgb(255, 0, 0);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
       <string/>
      </property>
     </widget>
    </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="OPnumber">
-     <property name="font">
-      <font>
-       <family>Rockwell Extra Bold</family>
-       <pointsize>10</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
+   <item row="17" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>5</number>
      </property>
-     <property name="text">
-      <string>OP Number</string>
+     <property name="leftMargin">
+      <number>0</number>
      </property>
-    </widget>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="Submit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(94, 150, 255);
+color: rgb(255, 255, 255);
+font: 81 14pt &quot;Rockwell Extra Bold&quot;;
+border-radius:20px;</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="www">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(94, 150, 255);
+color: rgb(255, 255, 255);
+font: 81 14pt &quot;Rockwell Extra Bold&quot;;
+border-radius:20px;</string>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
-   <item row="4" column="1">
-    <widget class="QLabel" name="oNumberl">
-     <property name="styleSheet">
-      <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
-     </property>
-     <property name="text">
-      <string>12</string>
-     </property>
+   <item row="19" column="1">
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>Full Name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Gender</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Age</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>OP Number</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Address</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Pincode</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Phone Number</string>
+      </property>
+     </column>
     </widget>
    </item>
   </layout>
